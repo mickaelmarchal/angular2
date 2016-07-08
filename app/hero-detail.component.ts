@@ -11,6 +11,9 @@ import { HeroService } from './hero.service';
 })
 export class HeroDetailComponent implements OnInit, OnDestroy {
 
+  private hero: Hero;
+  private sub: any;
+
   constructor(
     private heroService: HeroService,
     private route: ActivatedRoute) {
